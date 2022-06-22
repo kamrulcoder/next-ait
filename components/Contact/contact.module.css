@@ -1,0 +1,61 @@
+
+
+
+.contactArea {
+    padding: 50px 0;
+}
+.contactHeader  h2 {
+    color: #cf0000;
+    font-family: Hind Siliguri;
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: .20000000298023224px;
+    line-height: 54px;
+}
+
+.contactHeader  p {
+    color: #575757;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 857px;
+}
+
+
+.office  h4 {
+    color: #ff1e1e;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: .20000000298023224px;
+    line-height: 33px;
+}
+
+.office   ul {
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.phoneNumber  h4 {
+    color: #1f1e1e;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.phoneNumber   ul li {
+    list-style: none;
+}
+
+.contactAddress {
+     display: flex;
+     justify-content: space-between;
+     padding: 0 30px;
+     }
+
+
+     .office_map svg {
+        left: -22px;
+        max-width: 131px;
+        position: absolute;
+        top: 22px;
+    }

@@ -1,0 +1,58 @@
+#HeroArea{
+    padding: 70px 0;
+}
+
+.heroLeft  h2 {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 54px;
+    margin-bottom: 30px  !important;
+}
+
+.heroLeft  h2  span {
+
+    -webkit-text-fill-color: transparent;
+    background: #fff;
+    background: -webkit-linear-gradient(15deg,#ff1e1e 35%,#ff8079);
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: block;
+    display: inline-block;    
+    padding-top: 10px;
+}
+
+
+.heroLeft  p {
+    font-size: 15px ;
+    font-weight: 600;
+}
+
+.heroRight  img {
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+
+
+@media screen and (max-width: 776px) {
+
+    #HeroArea{
+        padding: 30px 0;
+    }
+
+    .heroLeft  h2 {
+        font-size:36px;
+        line-height: 40px;
+    }
+
+    
+.heroRight  img {
+    margin-bottom: 20px !important;
+}
+
+.orderRow {
+    flex-direction: column-reverse;
+}
+}

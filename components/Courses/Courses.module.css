@@ -1,0 +1,27 @@
+
+.courseArea {
+    padding-bottom: 40px;
+}
+
+.courseheader    h2 {
+    color: #cf0000;
+    font-family: Hind Siliguri;
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: .20000000298023224px;
+    line-height: 54px;
+}
+
+.courseheader p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.allCourse h2 {
+    color: #1f1e1e;
+    font-family: Hind Siliguri;
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: .20000000298023224px;
+    line-height: 54px;
+}
