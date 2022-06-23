@@ -3,15 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "clean": "rimraf \"{.next,dist,build,out,node_modules}\"",
-      "dev": "next dev",
-      "build": "next build",
-      "start": "next start",
-      "lint": "next lint",
-      "format": "prettier --write .",
-      "check-types": "tsc --pretty --noEmit",
-      "check-format": "prettier --check .",
-      "test-all": "yarn check-format && yarn lint && yarn check-types && yarn build"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",
