@@ -5,7 +5,7 @@ import styles from "./examResult.module.css"
 import jsPDF from 'jspdf';  
 import html2canvas from 'html2canvas';  
 
-export default function () {
+export default function ExamResult () {
 
   const   printDocument = () =>  {  
     const input = document.getElementById('pdfdiv');  
