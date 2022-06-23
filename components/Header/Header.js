@@ -20,11 +20,22 @@ export default function Header() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav "  className="justify-content-end   align-items-center">
             <Nav  className="align-items-center">
-              <Nav.Link   className={styles.navLink} href="#section_1" ref={React.createRef()} >হোম</Nav.Link>
-              <Nav.Link className={styles.navLink} href="#section_2"ref={React.createRef()}>কোর্স </Nav.Link>
-              <Nav.Link className={styles.navLink} href="#section_3" ref={React.createRef()}>আমাদের সম্পর্কে</Nav.Link>
-              <Nav.Link className={styles.navLink} href="#section_5"ref={React.createRef()}>যোগাযোগ</Nav.Link>
-              <Nav.Link className={`${styles.navLink}  ${styles.course}`} href="#deets">ব্রাউজ কোর্স রেসাল্ট </Nav.Link>
+            <Link href={"/#section_1"}>
+            <a  className={styles.navLink} >হোম</a>
+              </Link>
+            <Link href={"/#section_2"}>
+            <a  className={styles.navLink} >কোর্স</a>
+              </Link>
+            <Link href={"/#section_3"}>
+            <a  className={styles.navLink} >আমাদের সম্পর্কে</a>
+              </Link>
+            <Link href={"/#section_4"}>
+            <a  className={styles.navLink} >যোগাযোগ</a>
+              </Link>
+            <Link href={"/result"}>
+            <a  className={styles.navLink} >ব্রাউজ কোর্স রেসাল্ট</a>
+              </Link>
+              
             </Nav>
           </Navbar.Collapse>
         </Container>

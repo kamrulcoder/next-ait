@@ -1,6 +1,6 @@
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import styles from "./Courses.module.css";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // import "./swipper.css"
@@ -9,19 +9,27 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { AwesomeButton } from "react-awesome-button";
+import AOS from "aos";
+
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
 export default function Courses() {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div  className={styles.courseArea}>
       <Container>
-        <div className={styles.courseheader}>
+        <div className={styles.courseheader} >
           <Row>
             <Col lg={8}>
-              <h2>কোর্স সমূহ</h2>
-              <p>
+              <div  >
+              <h2 data-aos="fade-up"  data-aos-duration="1000">কোর্স সমূহ</h2>
+              <p data-aos="flip-down"   data-aos-duration="1500">
                 বর্তমান বিশ্বের ট্রেন্ডি এবং চাহিদাসম্পন্ন সব কোর্স রয়েছে
                 ক্রিয়েটিভ আইটি ইন্সটিটিউটে। কোর্স করার সময় যে প্রয়োজনীয়
                 কনফিগারেশনের কম্পিউটার দরকার, তার সবই রয়েছে আমাদের ল্যাবে। আপনি
@@ -29,11 +37,12 @@ export default function Courses() {
                 করতে পারেন। প্রতিটি কোর্স এমনভাবে সাজানো হয়েছে, যাতে কোর্স শেষে
                 প্রতিটি টপিকে কাজ করার আত্মবিশ্বাস আপনার থাকে।
               </p>
+              </div>
             </Col>
           </Row>
         </div>
         <div className={styles.allCourse}>
-          <h2>সকল কোর্স</h2>
+          <h2 data-aos="flip-down"   data-aos-duration="1500">সকল কোর্স</h2>
           <Swiper
             slidesPerView={1}
             spaceBetween={10}
@@ -60,7 +69,8 @@ export default function Courses() {
             className="mySwiper"
           >
             <SwiperSlide>
-              <Card >
+              <Card  data-aos="fade-up"
+     data-aos-duration="3000">
                 <Card.Img
                   variant="top"
                   src="https://app.creativeitinstitute.com/wp-content/uploads/2022/01/Graphic-Design-Training-Program_Bangladesh.jpg"
@@ -82,7 +92,8 @@ export default function Courses() {
               </Card>
             </SwiperSlide>
             <SwiperSlide>
-              <Card>
+              <Card data-aos="fade-up"
+     data-aos-duration="3000">
                 <Card.Img
                   variant="top"
                   src="https://app.creativeitinstitute.com/wp-content/uploads/2022/01/Graphic-Design-Training-Program_Bangladesh.jpg"
@@ -104,7 +115,8 @@ export default function Courses() {
               </Card>
             </SwiperSlide>
             <SwiperSlide>
-              <Card>
+              <Card data-aos="fade-up"
+     data-aos-duration="3000">
                 <Card.Img
                   variant="top"
                   src="https://app.creativeitinstitute.com/wp-content/uploads/2022/01/Graphic-Design-Training-Program_Bangladesh.jpg"
@@ -126,7 +138,8 @@ export default function Courses() {
               </Card>
             </SwiperSlide>
             <SwiperSlide>
-              <Card>
+              <Card data-aos="fade-up"
+     data-aos-duration="3000">
                 <Card.Img
                   variant="top"
                   src="https://app.creativeitinstitute.com/wp-content/uploads/2022/01/Graphic-Design-Training-Program_Bangladesh.jpg"

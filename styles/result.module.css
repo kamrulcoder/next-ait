@@ -1,0 +1,43 @@
+.formBox  {
+    border: 1px solid #ddd;
+    padding: 50px 30px;
+    margin: 50px 0;
+    border-radius: 10px;
+    /* box-shadow:0px 0px 1px rgb(0 0 0 / 50%) */
+
+    -webkit-box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 20px 0px -10px #FFFFFF, 0px -20px 0px -10px #FFFFFF, 20px 0px 0px -10px #FFFFFF, -20px 0px 0px -10px #FFFFFF, 0px 0px 0px 10px #FF0000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.formBox   h3 {
+    text-align: center;
+    color: #FFFFFF;
+    background: #996D6D;
+    text-shadow: #474747 3px 5px 2px;
+    padding: 7px 0;
+    border-radius: 5px;
+
+    -webkit-box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 8px 0px 0px 0px #DCD0C0, 0px 8px 0px 0px #B1938B, -8px 0px 0px 0px #4E4E56, 0px 0px 0px 8px #DA635D, 5px 5px 15px 5px rgba(0,0,0,0);
+margin-bottom: 30px;
+}
+
+
+.formBox   button {
+    font-size: 25px;
+    width: 8em;
+    background-color: rgb(56, 35, 35);
+    height: 2em;
+    color: #fff;
+    border-left: 0.08em solid;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
+}
+
+
+.formBox   button:hover{
+    opacity: 0.8;
+    background-color: rgb(59, 48, 48); 
+    color: #fff;
+}

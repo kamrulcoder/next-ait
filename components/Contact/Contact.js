@@ -30,7 +30,7 @@ export default function Contact() {
           <div className="contactMap">
             <Row>
               <Col lg={6}>
-                <div className="map " data-aos="flip-right">
+                <div className="map " data-aos="fade-up">
                   <div className={styles.office_map}>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131 46">
                     <polygon points="0.1 34.3 15.9 45.9 15.9 31.8 0.1 31.8 0.1 34.3" fill="#367645">
