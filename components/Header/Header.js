@@ -33,7 +33,7 @@ export default function Header() {
             <a  className={styles.navLink} >যোগাযোগ</a>
               </Link>
             <Link href={"/result"}>
-            <a  className={styles.navLink} >ব্রাউজ কোর্স রেসাল্ট</a>
+            <a  className={`${styles.navLink}  ${styles.course}`} >ব্রাউজ কোর্স রেসাল্ট</a>
               </Link>
               
             </Nav>
