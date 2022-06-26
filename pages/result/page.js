@@ -10,7 +10,7 @@ export default function page() {
   const { state, dispatch } = useContext(Store);
   const router = useRouter();
 
-  const {result } = state;
+  const {result  } = state;
 
 
   useEffect(() => {
