@@ -1,0 +1,118 @@
+.courseHeader  {
+    padding: 50px 0;
+}
+
+.pageBAnnerText  h4 {
+    -webkit-text-fill-color: transparent;
+    background: #fff;
+    background: -webkit-linear-gradient(24deg,#ff1e1e 35%,#ff8079);
+    background-clip: border-box;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 600;
+}
+
+.pageBAnnerText  h2 {
+    color: #1f1e1e;
+    font-size: 40px;
+    line-height: 45px;
+    padding-bottom: 16px;
+    padding-top: 7px;
+    font-weight: 600;
+}
+
+.pageBAnnerText  ul {
+     display: flex ;
+     list-style-type: none;
+}
+
+.pageBAnnerText li {
+    border: 0.5px solid rgba(0,0,0,.1);
+    border-radius: 20px;
+    color: #000;
+    font-family: Hind Siliguri;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .20000000298023224px;
+    line-height: 24px;
+    margin-right: 8px;
+    padding: 16px 0;
+    text-align: center;
+    width: 136px;
+}
+
+.pageBAnnerText li span  {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: .11224490404129028px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.courseArticle  {
+    font-size: 15px;
+    padding-bottom: 36px;
+    padding-top: 15px;
+    text-align: justify;
+}
+
+
+.pageBannerButton  a {
+    background: linear-gradient(214.38deg,#ff8079 -2.24%,#ff1e1e 59.38%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: #fff;
+    font-family: Hind Siliguri;
+    font-size: 18px;
+    line-height: 32px;
+    margin-right: 13px;
+    padding: 15px 44px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.pageBAnnerImage  img {
+    display: inline-block;
+    width: 100%;
+}
+
+
+.pgc_curriculum {
+    background: #ddd;
+    background: #faf9fd;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.curriculmList  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.curriculmList  li {
+    color: #605f62;
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .20000000298023224px;
+    padding-left: 0;
+    width: 50%;
+}
+
+.curriculmList  li   svg{
+    background: #fff;
+    padding: 4px;
+    font-size: 23px;
+    color: green;
+    border-radius: 2px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+}

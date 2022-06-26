@@ -11,7 +11,7 @@ export default function Layout({ children }) {
   return (
     <div>
       <Head>
-        <title>Next Amazona</title>
+        <title>Advance It  Institute   - Sherpur </title>
       </Head>
       <Header/>
       <Container>{children}</Container>

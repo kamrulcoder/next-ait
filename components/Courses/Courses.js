@@ -1,6 +1,8 @@
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import styles from "./Courses.module.css";
 import React, { useEffect, useRef, useState } from "react";
+import Router from 'next/router';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // import "./swipper.css"
@@ -14,6 +16,7 @@ import AOS from "aos";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
+import Link from "next/link";
 
 export default function Courses() {
 
@@ -80,14 +83,9 @@ export default function Courses() {
                   <h4>
                     <span>৳ </span>350
                   </h4>
-                  <AwesomeButton
-                    type="primary"
-                    size="large"
-                    href="#section_2"
-                    style={{ width: "100%" }}
-                  >
-                    এখনই ভর্তি হোন
-                  </AwesomeButton>
+                 
+                  <Link  href={"/course/something"}>
+                  <a   className={styles.button}>এখনই ভর্তি হোন</a></Link>
                 </Card.Body>
               </Card>
             </SwiperSlide>
@@ -103,14 +101,8 @@ export default function Courses() {
                   <h4>
                     <span>৳ </span>350
                   </h4>
-                  <AwesomeButton
-                    type="primary"
-                    size="large"
-                    href="#section_2"
-                    style={{ width: "100%" }}
-                  >
-                    এখনই ভর্তি হোন
-                  </AwesomeButton>
+                  <Link  href={"/course/something"}>
+                  <a   className={styles.button}>এখনই ভর্তি হোন</a></Link>
                 </Card.Body>
               </Card>
             </SwiperSlide>
@@ -126,14 +118,8 @@ export default function Courses() {
                   <h4>
                     <span>৳ </span>350
                   </h4>
-                  <AwesomeButton
-                    type="primary"
-                    size="large"
-                    href="#section_2"
-                    style={{ width: "100%" }}
-                  >
-                    এখনই ভর্তি হোন
-                  </AwesomeButton>
+                  <Link  href={"/course/something"}>
+                  <a   className={styles.button}>এখনই ভর্তি হোন</a></Link>
                 </Card.Body>
               </Card>
             </SwiperSlide>
@@ -149,14 +135,8 @@ export default function Courses() {
                   <h4>
                     <span>৳ </span>350
                   </h4>
-                  <AwesomeButton
-                    type="primary"
-                    size="large"
-                    href="#section_2"
-                    style={{ width: "100%" }}
-                  >
-                    এখনই ভর্তি হোন
-                  </AwesomeButton>
+                  <Link  href={"/course/something"}>
+                  <a   className={styles.button}>এখনই ভর্তি হোন</a></Link>
                 </Card.Body>
               </Card>
             </SwiperSlide>

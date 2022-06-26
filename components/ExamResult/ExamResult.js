@@ -1,11 +1,22 @@
 import { style } from "@mui/system";
-import React from "react";
+import React, { useContext } from "react";
 import { Row, Col ,Table} from "react-bootstrap";
 import styles from "./examResult.module.css"
 import jsPDF from 'jspdf';  
-import html2canvas from 'html2canvas';  
+import html2canvas from 'html2canvas';
+import { Store } from "../../utils/Store";
+import Cookies from "js-cookie";
+import { useRouter } from "next/router";
 
 export default function ExamResult () {
+  
+  const router = useRouter();
+
+  const { state, dispatch } = useContext(Store);
+  console.log(state.result)
+
+  const {course,roll, name, father, mother, mobile, result , session, certificate_issue_date } = state?.result || {};
+  
 
   const   printDocument = () =>  {  
     const input = document.getElementById('pdfdiv');  
@@ -23,6 +34,13 @@ export default function ExamResult () {
         pdf.save("download.pdf");  
       });  
   }  
+
+
+  const refreshResult = () => {
+    dispatch({ type: "USER_RESULT_REMOVE" });
+    Cookies.remove("result");
+    router.push("/result");
+  };
   return (
     <>
       <Row>
@@ -33,50 +51,54 @@ export default function ExamResult () {
               
               <tbody>
                 <tr>
-                  <td>Exam year </td>
-                  <td>2020</td>
+                  <td>Course Name </td>
+                  <td>{course}</td>
                 </tr>
                 <tr>
-                  <td>Technology Name </td>
-                  <td>Computer Office Application </td>
-                </tr>
-                <tr>
-                  <td>Registration Number  </td>
-                  <td>30008365444 </td>
+                  <td> Roll Number  </td>
+                  <td>{roll} </td>
                 </tr>
                 <tr>
                   <td>Session  </td>
-                  <td>2021</td>
+                  <td>{session}</td>
                 </tr>
                 <tr>
                   <td> Name </td>
-                  <td>Rabiul Islam  </td>
+                  <td>{name}  </td>
                 </tr>
                 <tr>
                   <td>Father,s  Name </td>
-                  <td>Md Noyon Mia  </td>
+                  <td>{father} </td>
                 </tr>
                 <tr>
-                  <td>Insitute  </td>
-                  <td>Advance It Institute   </td>
+                  <td>Mother,s  Name </td>
+                  <td> {mother} </td>
                 </tr>
-               
+                <tr>
+                  <td>Mobile No:  </td>
+                  <td> {mobile}</td>
+                </tr>
+                              
                <tr>
                  <td>Result   </td>
-                 <td>Passed    </td>
+                 <td>{result}    </td>
+               </tr>       
+               <tr>
+                 <td>Certificate Issue Date    </td>
+                 <td>{certificate_issue_date}    </td>
                </tr>
                
-               <tr>
-                 <td>CGPA/Division/ Grade    </td>
-                 <td>Passed    </td>
-               </tr>
+              
                
               </tbody>
             </Table>
             
             
           </div>
-          <div className={styles.download}><button onClick={printDocument} >Download </button></div>
+          <div className={styles.download}>
+          <button   onClick={refreshResult}>Again Search  </button>
+            <button onClick={printDocument} >Download </button>
+            </div>
         </Col>
       </Row>
     </>

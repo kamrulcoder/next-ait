@@ -25,3 +25,24 @@
     letter-spacing: .20000000298023224px;
     line-height: 54px;
 }
+
+.button {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    background-color: #1e88e5;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    text-align: center;
+    padding: 10px 0;
+    transition: 0.3s ease;
+    box-shadow: 2px 2px 16px -1px rgba(0,0,0,0.62);
+-webkit-box-shadow: 2px 2px 16px -1px rgba(0,0,0,0.62);
+-moz-box-shadow: 2px 2px 16px -1px rgba(0,0,0,0.62);
+}
+
+.button:hover {
+    background-color: #3697eb;
+    color: #fff;
+}

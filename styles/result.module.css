@@ -41,3 +41,24 @@ margin-bottom: 30px;
     background-color: rgb(59, 48, 48); 
     color: #fff;
 }
+
+.error {
+    display:   block;
+    padding: 7px 0;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+  
+    /* label danger classes */
+    background-color: #d9534f;
+    margin-top: 10px;
+}
+
+.inputerror {
+    border: 1px solid red;
+}
